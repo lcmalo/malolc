@@ -1,0 +1,516 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{padding-bottom: 250px;
+min-width: 900px;}
+
+body h1{font-family: 'Roboto', sans-serif;}
+
+
+#boss {
+	position: relative;
+	z-index: 1;
+	min-height: 100vh;
+	background-color: white;
+
+}
+
+#bar {
+	height: 400px;
+	background: black url(images/tokyo.jpg) center center no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+
+}
+}
+
+#bar h1{
+	text-align: center;
+
+	}
+
+.bouton a {
+display:block;
+width:180px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+border: 2px solid white;
+text-decoration: none;
+color: white;
+
+}
+.bouton a:hover {
+background-color: white;
+color: black;
+transition-duration: 0.5s;
+}
+
+
+	
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  opacity: 90%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+
+}
+
+
+.topnav img{
+
+  margin-top: 17px;
+  margin-left: 20px;
+  
+
+}
+
+.topnav img:hover {
+  opacity: 30%;
+  transition-duration: 0.2s;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 17%;
+  height: 65px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  transition-duration: 0.3s;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #6fa180;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none; }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  #boss {max-width: 600px;}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed; z-index: 2; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    
+    width: 50%
+  }
+}
+
+
+
+.links{
+	display: flex;
+	justify-content: space-around;
+	width: 100%; 
+}
+
+.links li{
+	list-style: none;
+}
+
+.links a{
+	 color: rgb(226,226,226);
+	 text-decoration: none;
+	 letter-spacing: 3px;
+	 font-weight: bold;
+	 font-size: 14px;
+}
+
+
+
+#mainBox {
+	width: 900px;
+	height: auto;
+	margin: 50px auto;
+	font-family: 'Roboto', sans-serif;
+}
+#mainBox img {
+	border: 1px solid black;
+	float: right;
+	margin: 0 0 30px 30px;
+}
+
+
+#mainBox h1 {
+	font-size: 44px;
+	margin: 0;
+}
+
+#mainBox h3 {
+	font-size: 22px;
+}
+
+#mainBox p {
+	font-size: 19px;
+	line-height: 1.6;
+	color: dimgrey;
+
+}
+
+#secondBox {
+	width: 900px;
+	height: auto;
+	margin: 50px auto ;
+	font-family: 'Roboto', sans-serif;
+
+}
+#secondBox h1 {
+	font-size: 44px;
+	margin: 0;
+}
+
+#secondBox h3 {
+	font-size: 22px;
+}
+
+#secondBox p {
+	font-size: 19px;
+	line-height: 1.6;
+	color: dimgrey;
+}
+
+#secondBox img {
+	border: 1px solid black;
+	float: left;
+	margin: 0 30px 0 0;
+}
+
+#troisiemeParagraphe {
+	width: 900px;
+	height: auto;
+	margin:50px auto;
+	font-family: 'Roboto', sans-serif;
+}
+#troisiemeParagraphe img {
+	border: 1px solid black;
+	float: right;
+	margin: 0 0 30px 30px;
+}
+
+#troisiemeParagraphe h3 {
+	font-size: 22px;
+}
+
+#troisiemeParagraphe p {
+	font-size: 19px;
+	line-height: 1.6;
+	color: dimgrey;
+
+}
+
+#thirdBox {
+	width: 900px;
+	height: auto;
+	margin: 50px auto ;
+	
+
+}
+
+#thirdBox table{font-family: 'Roboto', sans-serif;
+font-size: 19px;
+	line-height: 1.6;
+	color: ;}
+
+#thirdBox hr {
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+}
+
+
+#quatreboites{
+	background-color: #6fa180;
+
+
+}
+
+#forthBox {
+	width: 900px;
+	height: auto;
+	margin:auto;
+	font-family: 'Roboto', sans-serif;
+	color: #191919;
+
+}
+
+#forthBox hr {
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+}
+
+#forthBox p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+#cinqboites{
+	background-color: red;
+	background: url(images/bureau2.jpg) center center no-repeat;
+	background-size: cover;
+
+}
+
+#fifthBox {
+	width: 900px;
+	height: auto;
+	margin:auto;
+	font-family: 'Roboto', sans-serif;
+	color: #191919;
+}
+
+#fifthBox hr {
+	margin-top: 20px;
+	margin-bottom: 50px;
+
+}
+
+#fifthBox p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+
+footer{
+	position: fixed;
+	z-index: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 260px;
+	color: white;
+	text-align: center;
+	background: blue url(images/tokyo.jpg) center center no-repeat;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	line-height: 2;
+	min-width: 900px;
+}
+
+footer hr {
+	margin-top: 10px;
+	margin-bottom: 40px;
+
+
+}
+
+.progress-bar { 
+    width: 150px;
+    height: 24px;
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar:before { 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+   .progress-bar2 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar2:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+   .progress-bar3 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar3:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+   .progress-bar4 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar4:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+.progress-bar5 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar5:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+   .progress-bar6 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar6:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 95px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+   .progress-bar7 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar7:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 115px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+.progress-bar8 { 
+    width: 150px;
+    height: 24px;
+    
+    padding: 4px;
+    background-color: #191919;
+  
+}
+
+.progress-bar8:before { 
+
+	
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 16px;
+    background: #6fa180;
+
+   }
+
+table {
+	
+	width: 100%;
+	text-align: left;
+}
+
+table img {
+	margin-right: 10px;
+}
+
+
+
